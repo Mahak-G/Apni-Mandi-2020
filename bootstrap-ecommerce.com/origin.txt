@@ -1,0 +1,128 @@
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/page-profile-main.html
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\page-profile-main.html
+Content Type: text/html
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/favicon.ico
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\images\favicon.ico
+Content Type: image/x-icon
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/css/bootstrap.css
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\css\bootstrap.css
+Content Type: text/css
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/css/all.min.css
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\css\all.min.css
+Content Type: text/css
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/css/ui.css
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\css\ui.css
+Content Type: text/css
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/css/responsive.css
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\css\responsive.css
+Content Type: text/css
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/js/jquery-2.0.0.min.js
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\js\jquery-2.0.0.min.js
+Content Type: application/javascript
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/js/bootstrap.bundle.min.js
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\js\bootstrap.bundle.min.js
+Content Type: application/javascript
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/js/script.js
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\js\script.js
+Content Type: application/javascript
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logo.png
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\images\logo.png
+Content Type: image/png
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/avatars/avatar3.jpg
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\images\avatars\avatar3.jpg
+Content Type: image/jpeg
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\images\items\1.jpg
+Content Type: image/jpeg
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/2.jpg
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\images\items\2.jpg
+Content Type: image/jpeg
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/3.jpg
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\images\items\3.jpg
+Content Type: image/jpeg
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-brands-400.eot
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-brands-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-brands-400.eot?
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-brands-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-brands-400.woff2
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-brands-400.woff2
+Content Type: 
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-brands-400.woff
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-brands-400.woff
+Content Type: application/x-font-woff
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-brands-400.ttf
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-brands-400.ttf
+Content Type: application/x-font-ttf
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-brands-400.svg
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-brands-400.svg
+Content Type: image/svg+xml
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-regular-400.eot
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-regular-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-regular-400.eot?
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-regular-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-regular-400.woff2
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-regular-400.woff2
+Content Type: 
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-regular-400.woff
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-regular-400.woff
+Content Type: application/x-font-woff
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-regular-400.ttf
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-regular-400.ttf
+Content Type: application/x-font-ttf
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-regular-400.svg
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-regular-400.svg
+Content Type: image/svg+xml
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-solid-900.eot
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-solid-900.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-solid-900.eot?
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-solid-900-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-solid-900.woff2
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-solid-900.woff2
+Content Type: 
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-solid-900.woff
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-solid-900.woff
+Content Type: application/x-font-woff
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-solid-900.ttf
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-solid-900.ttf
+Content Type: application/x-font-ttf
+
+Uri: http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/fonts/fontawesome/webfonts/fa-solid-900.svg
+File Name: c:\Downloaded Web Sites\bootstrap-ecommerce.com\bootstrap-ecommerce-html\fonts\fontawesome\webfonts\fa-solid-900.svg
+Content Type: image/svg+xml
+
