@@ -265,71 +265,15 @@ else
 		<td>
 		<br>
 		<br>
-		INVOICE NO : <?php
-						$INVOICEID=mt_rand(10000, 99999);
-						echo $INVOICEID;?> </td>
-		</tr>
-		<tr><td>$ORDERID=mt_rand(10000, 99999);
-						echo $ORDERID;?></td></tr><tr><td>NAME ON CARD: <?php echo htmlspecialchars($_SESSION["name"]); ?> </td>
+		INVOICE NO : <?php echo mt_rand(10000, 99999);?> </td>
+		</tr><tr><td>NAME ON CARD: <?php echo htmlspecialchars($_SESSION["name"]); ?> </td>
 		</tr><tr><td>AMOUNT PAID : <?php
 if(!empty($_COOKIE['payment']))
-        echo $_COOKIE["prod"];
-
+        echo $_COOKIE['prod'];
+$_COOKIE['payment']='false';
        ?>
-		</script></td></tr>
+		</td></tr>
 		<tr><TD>CARD NO BY WHICH AMOUNT PAID:  </td><TD><?php echo htmlspecialchars($_SESSION["cardno"]); ?> </td></tr></table></h3>
-		<?php
-					include("register.php");
-					$cust_id=$_SESSION('USERID');
-					$amount=$_COOKIE["prod"];
-					$sql = "INSERT INTO txn (TXNID,ORDERID , CUSTID, AMOUNT) VALUES (?,?,?,? )";
-					if($stmt = mysqli_prepare($link, $sql)){
-						mysqli_stmt_bind_param($stmt, "sssiss", $param_txnID, $param_order,$param_cust,$param_amount);
-						$param_txnID = $TXNID;
-						$param_order = $ORDERID;
-						$param_cust= $cust_id;
-						$param_amount = $amount;
-						
-            if(mysqli_stmt_execute($stmt))
-			{
-			}
-			else
-			{	
-                echo "Something went wrong. Please try again later.";
-            }
-			mysqli_stmt_close($stmt);
-			}
-			//current date and time
-			$sql1 = "INSERT INTO auto_ins
-						(MySQL_Function, DATETIME)
-						VALUES
-					(“NOW()”, NOW());
-					SELECT * FROM auto_ins";
-					if($stmt1 = mysqli_prepare($link, $sql1)){
-						mysqli_stmt_bind_param($stmt1, "sssiss");
-						
-						
-            if(mysqli_stmt_execute($stmt1))
-			{
-			}
-			else
-			{	
-				echo "Something went wrong. Please try again later.";
-			}
-						
-						
-            if(mysqli_stmt_execute($stmt2))
-			{
-			}
-			else
-			{	
-                echo "Something went wrong. Please try again later.";
-            }
-
-			mysqli_close($link);
-		?>
-					
-         
     </div>
 			<script>
 				$('.toggle').click(function(){
@@ -500,17 +444,16 @@ $(document).ready(function(){
 		paypal.minicart.cart.on('checkout', function (evt) {
 			var items = this.items(),
 				len = items.length,
-				
+				total = 0,
 				i;
 
 			// Count the number of each item in the cart
 			for (i = 0; i < len; i++) {
-				items[i].set('quantity')=0;
-				total+=items[i].get('quantity');
+				total += items[i].get('quantity');
 			}
 
-			if (total ==0) {
-				alert('Add to cart is empty.Please add product.');
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
 				evt.preventDefault();
 			}
 		});

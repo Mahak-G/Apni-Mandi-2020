@@ -247,7 +247,7 @@ else
                                      <div class="vertical_post check_box_agile">
 											<div class="checkbox">								
 												<div class="check_box_one cashon_delivery">
-												<form action="doorstep.php">
+												<form action="qety.php">
 											<input type="submit" class="button" value="pick up"> 
 											</form>		 
 															
@@ -257,11 +257,13 @@ else
 								</div>
                 </div>
                 <div>
+
+
                     								  
-				<div class="vertical_post check_box_agile">
+									<div class="vertical_post check_box_agile">
 											<div class="checkbox">								
 												<div class="check_box_one cashon_delivery">
-												<form action="doorstep.php">
+												<form action="payment.php">
 											<input type="submit" class="button" value="doorstep"> 
 											</form>
 											</div>
