@@ -11,21 +11,22 @@ about going to market to buy veggies and consider online buying a favourable opt
 
 ## Demo Images:
 <b><em>These images show how the website is displayed and how it works .</em></b><br><br>
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/initial.jpg" height="300" width="500" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/signup.jpg" height="300" width="500" />
+<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/initial.jpg" height="250" width="400" />
+<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/signup.jpg" height="250" width="400" />
 <br><br><b><em>While registering on the website, OTP verification is done by sending otp messages through textlocal.in .</em></b><br><br>
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/otp.jpg" height="300" width="500" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/signin.jpg" height="300" width="500" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/accountdet.jpg" height="300" width="500" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/cart.jpeg" height="300" width="500" />
+<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/otp.jpg" height="250" width="400" />
+<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/signin.jpg" height="250" width="400" />
+<br><br><b><em>Under the account tab, account details and recent order details are displayed.</em></b><br><br>
+<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/accountdet.jpg" height="250" width="400" />
+<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/cart.jpeg" height="250" width="400" />
 <br><br><b><em>Both pickup and doorstep delivery options are provided. If you select pickup, the farmer with the same pincode as yours or the 
 nearest farmer with the available products is displayed.</em></b><br><br>
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/payment.jpeg" height="300" width="500" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/famer%20gps.jpeg" height="300" width="500" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/pay%20card.jpeg" height="300" width="500" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/invoice.jpeg" height="300" width="500" />
+<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/payment.jpeg" height="250" width="400" />
+<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/famer%20gps.jpeg" height="250" width="400" />
+<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/pay%20card.jpeg" height="250" width="400" />
+<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/invoice.jpeg" height="250" width="400" />
 <br><br><b><em>Google Action Invocation is displayed in the image below.</em></b><br><br>
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/gac.png" height="300" width="500" />
+<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/gac.png" height="250" width="400" />
 
 
 ## Overview:
