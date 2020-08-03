@@ -324,10 +324,20 @@ else
 					<?php
 						echo "$a <br>";
 						echo "<br> $b <br><br>";
+						if(isset($_POST['login']))
+						echo "<button onclick='myFunction()'>Proceed Further</button>";
 					?>
 					  <input type="text" name="PINCODE" placeholder="Enter 6 digit pincode" required=" "><span><?php echo $PINCODE_er; ?></span>
 					  <input type="submit" value="Enter" name="login">
 					</form>
+					<br>
+					
+					
+							<script>
+									function myFunction() {
+ 										 document.write("Your detail has been succefully send to the farmer");
+										}
+							</script>
 				  </div>
 			</div>
 		</div>
@@ -466,9 +476,14 @@ $(document).ready(function(){
 				i;
 
 			// Count the number of each item in the cart
-			for (i = 0; i < len; i++) {
-				total += items[i].get('quantity');
-			}
+			var myStringArray = [];
+// Count the number of each item in the cart
+		for (i = 0; i < len; i++) {  myStringArray.push(items[i].get('item_name'));
+myStringArray.push(items[i].get('quantity'));
+myStringArray.push(items[i].get('amount'));
+				total += items[i].get('quantity')*items[i].get('amount');
+		}
+localStorage.setItem("vOneLocalStorage", myStringArray);
 
 			if (total < 3) {
 				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
