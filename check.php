@@ -1,7 +1,14 @@
-<?php 
-if(!empty($_COOKIE['payment'])&&($_COOKIE['payment']==true))
-header('location:invoice.php');
+<?php
+echo "<script>const cookieValue = document.cookie
+.split('; ')
+.find(row => row.startsWith('payment'))
+.split('=')[1];
+
+if(cookieValue==100)
+    window.location.href='invoice.php';
 else
-header('location:checkout.php');
+window.location.href='checkout.php';
+</script>";
+
 ?>
 

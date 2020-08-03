@@ -1,7 +1,7 @@
 <?php
 
  require_once "register.php";
-$USERID = $password = $PINCODE="";
+$USERID = $password = $PINCODE=$a=$b="";
 $USERID_er = $PSWD_er = $PINCODE_er="";
  
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -33,11 +33,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                          ?>
                          <?php
 						 
-						 echo $row['userid'];
-						 f($row);
+						 $a=$row['userid'];
+						 $b=$row['addr'];
 						 //header('location:single.php');
 
                     }
+				  }
+
+				  else
+				  {
+					  $a="No farmer near you";
 				  }
 		}
 	}  
@@ -317,10 +322,8 @@ else
 					<h2>Farmers near you</h2>
 					<form method="post">
 					<?php
-					function f($row)
-					{
-						echo $row['userid'];
-					}
+						echo "$a <br>";
+						echo "<br> $b <br><br>";
 					?>
 					  <input type="text" name="PINCODE" placeholder="Enter 6 digit pincode" required=" "><span><?php echo $PINCODE_er; ?></span>
 					  <input type="submit" value="Enter" name="login">

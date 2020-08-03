@@ -7,6 +7,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
+//unset($_COOKIE['payment']);
+//header("location: index.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -245,18 +247,25 @@ else
 				  </button>
 			   </div> 
 			   <!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-					<ul class="nav navbar-nav nav_1">
-						<li><a href="vegetables.php">Vegetables</a></li>
-						<li><a href="fruits.php">Fruits</a></li>
-						<li><a href="crop.php">Grains</a></li>
-
+			   <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<br> &nbsp &nbsp <span> BUY FROM CATEGORIES </span> <br><br>
+					<ul class="nav navbar-nav nav_1"><br>
+										<li><a href="vegetables.php">Vegetables</a></li>
+										<li><a href="fruits.php">Fruits</a></li>
+										<li><a href="crop.php">Grains</a></li>
 					</ul>
-				 </div><!-- /.navbar-collapse -->
+					<br> &nbsp &nbsp <span> FARMER </span> <br><br>
+					<ul class="nav navbar-nav nav_1">
+										<li><a href="sell.php">Sell Now</a></li>
+										<li><a href="organic.php">Organic Farming</a></li>
+										<li><a href="tips.php">Tips and Suggestions</a></li>
+										<li><a href="policies.php">Government Policies</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-<!-- login/inoice -->
+<!-- login/invoice -->
 <div class="privacy about">
 		<h1> 
 		<h3>INV<span>OICE</span></h3>
@@ -265,16 +274,55 @@ else
 		<td>
 		<br>
 		<br>
-		INVOICE NO : <?php echo mt_rand(10000, 99999);?> </td>
+		INVOICE NO : <?php $_SESSION['a']=mt_rand(10000, 99999);
+							echo $_SESSION['a'];?> </td>
 		</tr><tr><td>NAME ON CARD: <?php echo htmlspecialchars($_SESSION["name"]); ?> </td>
 		</tr><tr><td>AMOUNT PAID : <?php
-if(!empty($_COOKIE['payment']))
-        echo $_COOKIE['prod'];
-$_COOKIE['payment']='false';
+		echo "<script>const cookieValue = document.cookie
+		.split('; ')
+		.find(row => row.startsWith('product'))
+		.split('=')[1];
+		document.write(cookieValue);
+		</script>";
        ?>
 		</td></tr>
 		<tr><TD>CARD NO BY WHICH AMOUNT PAID:  </td><TD><?php echo htmlspecialchars($_SESSION["cardno"]); ?> </td></tr></table></h3>
-    </div>
+		<br>
+		<div style="text-align: center">
+		<textarea placeholder="Your reviews here..." cols="30" rows="5" align="center"></textarea>
+		</div>
+		
+	</div>
+	
+	
+                <fieldset>
+                    <button align="center" onclick="f()" style="background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;"  class="button" >Done</button>
+                </fieldset>
+			<script>
+				function f()
+				{
+				/*	var d = new Date();
+    d.setTime(d.getTime() + (exMins*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie =  "payment=false;" + expires + ";path=/";*/
+					//document.cookie="payment=;expires=Sat, 01 Aug 2020 00:00:00 IST;path=/;";
+					document.cookie="payment=200";
+					const cookieValue = document.cookie
+.split('; ')
+.find(row => row.startsWith('payment'))
+.split('=')[1];
+window.location.href='api.php';
+				}
+				</script>
 			<script>
 				$('.toggle').click(function(){
 				  // Switches the Icon
@@ -451,6 +499,7 @@ $(document).ready(function(){
 			for (i = 0; i < len; i++) {
 				total += items[i].get('quantity');
 			}
+		
 
 			if (total < 3) {
 				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');

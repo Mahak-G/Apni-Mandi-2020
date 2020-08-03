@@ -3,6 +3,7 @@
 session_start();
 
 require_once "register.php";
+$a="";
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 	
@@ -33,7 +34,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             // Store data in session variables
                             $_SESSION["balance"] = $balance;
                             $_SESSION["name"] = $name; 
-                            $_SESSION["cardno"] = $no; 							
+							$_SESSION["cardno"] = $no;
+							$a="Click on final cart"; 							
                             
                             // Redirect user to welcome page
                             //header("location: invoice.php");
@@ -293,6 +295,7 @@ else
            <div>
                     								  
 																		  <form action="#" method="post" >
+																		 <?php echo $a;?>
 									
 										<div >
 											<div >
@@ -563,8 +566,13 @@ $(document).ready(function(){
 			for (i = 0; i < len; i++) {
 				total += items[i].get('quantity')*items[i].get('amount');
 			}
-			document.cookie = 'prod='+total;
-			document.cookie = 'payment=true';
+			document.cookie = 'product='+total;
+			document.cookie = 'payment=100';
+			const cookieValue = document.cookie
+  		.split('; ')
+  .find(row => row.startsWith('payment'))
+  .split('=')[1];
+			
 			if (total ==0) {
 				alert('your cart is empty');
 				evt.preventDefault();

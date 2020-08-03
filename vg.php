@@ -1,5 +1,4 @@
 <?php
-
 require_once "register.php";
 session_start();
 $CONTACT="";
@@ -12,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	if(isset($_POST['sendopt'])) {
 		require('textlocal.class.php');
 
-		$textlocal = new Textlocal(false, false,'Tjb5hfLw4CA-9CN8ub06w7URGAfvzzKymKQpmtRjC4');
+		$textlocal = new Textlocal(false, false,'U64JUPYAiJE-hAiv70Ut6MJtP3EmiuY6NqzcSy6Pd5');
 
 		// You can access MOBILE from credential.php
 		// $numbers = array(MOBILE);
