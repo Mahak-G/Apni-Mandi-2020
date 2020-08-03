@@ -1,5 +1,4 @@
 <?php
-
  require_once "register.php";
 $USERID = $password = "";
 $USERID_er = $PSWD_er = "";
@@ -95,7 +94,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["loggedin"] = true;
 							$_SESSION["USERID"] = $USERID; 
 							$_SESSION["mail"]=$row['EMAIL'];
-							$_SESSION["addr"]=$row['ADDRESS'];               
+							$_SESSION["addr"]=$row['ADDRESS']; 
+							$_SESSION["phone"]=$row['CONTACT'];              
                             	header('location:mg.php');
 							
                         	} 
@@ -539,9 +539,14 @@ $(document).ready(function(){
 				i;
 
 			// Count the number of each item in the cart
-			for (i = 0; i < len; i++) {
-				total += items[i].get('quantity');
-			}
+			var myStringArray = [];
+// Count the number of each item in the cart
+		for (i = 0; i < len; i++) {  myStringArray.push(items[i].get('item_name'));
+myStringArray.push(items[i].get('quantity'));
+myStringArray.push(items[i].get('amount'));
+				total += items[i].get('quantity')*items[i].get('amount');
+		}
+localStorage.setItem("vOneLocalStorage", myStringArray);
 
 			if (total < 3) {
 				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');

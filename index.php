@@ -657,22 +657,24 @@ $(document).ready(function(){
 <script>
 		paypal.minicart.render();
 
-		paypal.minicart.cart.on('checkout', function (evt) {
-			var items = this.items(),
+paypal.minicart.cart.on('checkout', function (evt) {
+		var items = this.items(),
 				len = items.length,
 				total = 0,
 				i;
-
-			// Count the number of each item in the cart
-			for (i = 0; i < len; i++) {
-				total += items[i].get('quantity');
-			}
-
-			if (total < 3) {
+var myStringArray = [];
+// Count the number of each item in the cart
+		for (i = 0; i < len; i++) {  myStringArray.push(items[i].get('item_name'));
+myStringArray.push(items[i].get('quantity'));
+myStringArray.push(items[i].get('amount'));
+				total += items[i].get('quantity')*items[i].get('amount');
+		}
+localStorage.setItem("vOneLocalStorage", myStringArray);
+		if (total < 3) {
 				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
 				evt.preventDefault();
-			}
-		});
+		}
+});
 
 	</script>
 </body>

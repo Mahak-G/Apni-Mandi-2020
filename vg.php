@@ -11,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	if(isset($_POST['sendopt'])) {
 		require('textlocal.class.php');
 
-		$textlocal = new Textlocal(false, false,'U64JUPYAiJE-hAiv70Ut6MJtP3EmiuY6NqzcSy6Pd5');
+		$textlocal = new Textlocal(false, false,'lfotIw1FFnQ-B0jVy4xsgZpcWbWmYiJ47Ah9S1C2py');
 
 		// You can access MOBILE from credential.php
 		// $numbers = array(MOBILE);
@@ -460,10 +460,14 @@ $(document).ready(function(){
 				i;
 
 			// Count the number of each item in the cart
-			for (i = 0; i < len; i++) {
-				total += items[i].get('quantity');
-			}
-
+			var myStringArray = [];
+// Count the number of each item in the cart
+		for (i = 0; i < len; i++) {  myStringArray.push(items[i].get('item_name'));
+myStringArray.push(items[i].get('quantity'));
+myStringArray.push(items[i].get('amount'));
+				total += items[i].get('quantity')*items[i].get('amount');
+		}
+localStorage.setItem("vOneLocalStorage", myStringArray);
 			if (total < 3) {
 				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
 				evt.preventDefault();

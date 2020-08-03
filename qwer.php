@@ -1,8 +1,19 @@
-
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+//unset($_COOKIE['payment']);
+//header("location: index.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Events :: w3layouts</title>
+<title>Emandi/invoice</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -144,14 +155,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="w3l_header_right">
 			<ul>
 				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
-				<?php
-session_start();
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a><?php
+ // Check if the user is logged in, if not then redirect to login page
+
 if(!empty($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
   					echo "<div class='mega-dropdown-menu'>
 						<div class='w3ls_vegetables'>
 							<ul class='dropdown-menu drp-mnu'>
-							<li><a href='bootstrap-ecommerce.com\bootstrap-ecommerce-html\g.php'>User ID</a></li>
 								<li><a href='logout.php'>Logout</a></li> 
 							</ul>
 
@@ -197,7 +207,7 @@ else
 <!-- //script-for sticky-nav -->
 	<div class="logo_products">
 		<div class="container">
-			<div class="w3ls_logo_products_left">
+		<div class="w3ls_logo_products_left">
 				<h1><a href="index.php"><span>Apni Mandi</span> Store</a></h1>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -220,18 +230,13 @@ else
 <!-- //header -->
 <!-- products-breadcrumb -->
 	<div class="products-breadcrumb">
-		<div class="container">
-			<ul>
-				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.php">Home</a><span>|</span></li>
-				<li>Events</li>
-			</ul>
-		</div>
+		
 	</div>
 <!-- //products-breadcrumb -->
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
-			<nav class="navbar nav_bottom">
+		<nav class="navbar nav_bottom">
 			 <!-- Brand and toggle get grouped for better mobile display -->
 			  <div class="navbar-header nav_2">
 				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
@@ -242,7 +247,7 @@ else
 				  </button>
 			   </div> 
 			   <!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+			   <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<br> &nbsp &nbsp <span> BUY FROM CATEGORIES </span> <br><br>
 					<ul class="nav navbar-nav nav_1"><br>
 										<li><a href="vegetables.php">Vegetables</a></li>
@@ -257,60 +262,116 @@ else
 										<li><a href="policies.php">Government Policies</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
-
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-<!-- events -->
-		<div class="events">
-			<h3>Events</h3>
-			<div class="events-bottom">
-				<div class="col-md-6 events_bottom_left">
-					<div class="col-md-4 events_bottom_left1">
-						<div class="events_bottom_left1_grid">
-							<h4>20</h4>
-							<p>sept, 2020</p>
-						</div>
-					</div>
-					<div class="col-md-8 events_bottom_left2">	
-						<img src="images/15.jpg" alt=" " class="img-responsive" />
-						<h4>Farmers Meet</h4>
-						<ul>
-							<li><i class="fa fa-clock-o" aria-hidden="true"></i>3:00 PM</li>
-							<li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Admin</a></li>
-						</ul>
-						<p>A meeting will be organised region wise for intrested farmers to explain them the working of the website and to commemorate 
-						    the inaugration of our website.</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-6 events_bottom_left">
-					<div class="col-md-4 events_bottom_left1">
-						<div class="events_bottom_left1_grid">
-							<h4>21</h4>
-							<p>Dec, 2020</p>
-						</div>
-					</div>
-					<div class="col-md-8 events_bottom_left2">	
-						<img src="images/19.jpg" alt=" " class="img-responsive" />
-						<h4>Loyal Customers Get Free Kitchen Garden Farming Workshop</h4>
-						<ul>
-							<li><i class="fa fa-clock-o" aria-hidden="true"></i>3:30 PM</li>
-							<li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Admin</a></li>
-						</ul>
-						<p>Our selected loyal customers will be taken by us to some of the best farmers to show then how cultivation is done 
-						and a workshop will be organised to teach them kitchen garden farming.</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
+<!-- login/invoice -->
+<div class="privacy about">
+		<h1> 
+		<h3>INV<span>OICE</span></h3>
+		<table  align="center">
+		<tr>
+		<td>
+		<br>
+		<br>
+		INVOICE NO : <?php $_SESSION['a']=mt_rand(10000, 99999);
+							echo $_SESSION['a'];?> </td>
+		</tr><tr><td>NAME ON CARD: <?php echo htmlspecialchars($_SESSION["name"]); ?> </td>
+		</tr><tr><td>AMOUNT PAID : <?php
+		echo "<script>const cookieValue = document.cookie
+		.split('; ')
+		.find(row => row.startsWith('product'))
+		.split('=')[1];
+		document.write(cookieValue);
+		</script>";
+       ?>
+		</td></tr>
+		<tr><TD>CARD NO BY WHICH AMOUNT PAID:  </td><TD><?php echo htmlspecialchars($_SESSION["cardno"]); ?> </td></tr></table></h3>
+		<br>
+		<div style="text-align: center">
+		<textarea placeholder="Your reviews here..." cols="30" rows="5" align="center"></textarea>
 		</div>
-<!-- //events -->
+		
+	</div>
+	
+	<form  align="center" >
+	
+                <fieldset>
+                    <button  onclick="f()" style="background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;"  class="button" >Done</button>
+                </fieldset>
+			</form>
+			<script>
+				function f()
+				{
+				/*	var d = new Date();
+    d.setTime(d.getTime() + (exMins*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie =  "payment=false;" + expires + ";path=/";*/
+					//document.cookie="payment=;expires=Sat, 01 Aug 2020 00:00:00 IST;path=/;";
+					document.cookie="payment=200";
+					alert ("werty");
+window.location.href='api.php';
+				}
+				</script>
+			<script>
+				$('.toggle').click(function(){
+				  // Switches the Icon
+				  $(this).children('i').toggleClass('fa-pencil');
+				  // Switches the forms  
+				  $('.form').animate({
+					height: "toggle",
+					'padding-top': 'toggle',
+					'padding-bottom': 'toggle',
+					opacity: "toggle"
+				  }, "slow");
+				});
+			</script>
+		</div>
+<!-- //login -->
 		</div>
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
+<!-- newsletter-top-serv-btm -->
+	<div class="newsletter-top-serv-btm">
+		<div class="container">
+			<div class="col-md-4 wthree_news_top_serv_btm_grid">
+				<div class="wthree_news_top_serv_btm_grid_icon">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				</div>
+				<h3>Nam libero tempore</h3>
+				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
+					saepe eveniet ut et voluptates repudiandae sint et.</p>
+			</div>
+			<div class="col-md-4 wthree_news_top_serv_btm_grid">
+				<div class="wthree_news_top_serv_btm_grid_icon">
+					<i class="fa fa-bar-chart" aria-hidden="true"></i>
+				</div>
+				<h3>officiis debitis aut rerum</h3>
+				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
+					saepe eveniet ut et voluptates repudiandae sint et.</p>
+			</div>
+			<div class="col-md-4 wthree_news_top_serv_btm_grid">
+				<div class="wthree_news_top_serv_btm_grid_icon">
+					<i class="fa fa-truck" aria-hidden="true"></i>
+				</div>
+				<h3>eveniet ut et voluptates</h3>
+				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
+					saepe eveniet ut et voluptates repudiandae sint et.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //newsletter-top-serv-btm -->
 <!-- newsletter -->
 	<div class="newsletter">
 		<div class="container">
@@ -318,7 +379,7 @@ else
 				<h3>sign up for our newsletter</h3>
 			</div>
 			<div class="w3agile_newsletter_right">
-				<form action="#" method="post">
+				<form method="post">
 					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
 					<input type="submit" value="subscribe now">
 				</form>
@@ -347,7 +408,14 @@ else
 					<li><a href="privacy.php">terms of use</a></li>
 				</ul>
 			</div>
-			
+			<div class="col-md-3 w3_footer_grid">
+				<h3>Farmer Section</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="organic.php">Organic Farming</a></li>
+					<li><a href="tips.php">Tips and Suggestions</a></li>
+					<li><a href="policies.php">Government Policies</a></li>
+				</ul>
+			</div>
 			<div class="col-md-3 w3_footer_grid">
 				<h3>Users Review</h3>
 				<ul class="w3_footer_grid_list1">
@@ -427,14 +495,10 @@ $(document).ready(function(){
 				i;
 
 			// Count the number of each item in the cart
-			var myStringArray = [];
-// Count the number of each item in the cart
-		for (i = 0; i < len; i++) {  myStringArray.push(items[i].get('item_name'));
-myStringArray.push(items[i].get('quantity'));
-myStringArray.push(items[i].get('amount'));
-				total += items[i].get('quantity')*items[i].get('amount');
-		}
-localStorage.setItem("vOneLocalStorage", myStringArray);
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+		
 
 			if (total < 3) {
 				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');

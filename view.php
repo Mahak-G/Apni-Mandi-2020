@@ -2,7 +2,7 @@
 session_start();
 require_once "register.php";
  $u=$_SESSION["USERID"];
-$a=$b=$c=$d=$e=$f='';
+$a=$b=$c=$d=$e=$f="";
 $sql="SELECT * FROM FARMER_PRODUCT WHERE FARMERID = '$u'";
           $res=mysqli_query($link,$sql);
           if(!$res)
@@ -17,12 +17,13 @@ $sql="SELECT * FROM FARMER_PRODUCT WHERE FARMERID = '$u'";
                    ?>
 				   
                    <?php
-				  $a=$row[`QTY`]);
+				  $a=$row['unitprice'];
 				   $b=$row['QUALITY'];
 				   $c=$row['UNITPRICE'];
 				   $d=$row['PRODNAME'];
-				   $e=$row['price'];
+				  
 				   $f=$row['HARVESTED'];
+				   header('location:mg.php');
 				  
               }
           }

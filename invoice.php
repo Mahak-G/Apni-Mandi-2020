@@ -294,9 +294,10 @@ else
 		
 	</div>
 	
+	<form action="#" align="center" >
 	
                 <fieldset>
-                    <button align="center" onclick="f()" style="background-color: #4CAF50;
+                    <button  onclick="f()" style="background-color: #4CAF50;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -307,6 +308,7 @@ else
   margin: 4px 2px;
   cursor: pointer;"  class="button" >Done</button>
                 </fieldset>
+			</form>
 			<script>
 				function f()
 				{
