@@ -1,0 +1,7 @@
+//prediction colab files and database of the same
+1.weekly consumption prediction
+	https://colab.research.google.com/drive/1WwxyP15ujU89JGyAUdrsktZiYaOKltrx?usp=sharing
+	database name: consumption.csv
+2.weekly cost prediction
+	https://colab.research.google.com/drive/15yrxjVywyUEj48_JRcp9W3t_cZLtWCTO?usp=sharing
+	database name: product.csv
