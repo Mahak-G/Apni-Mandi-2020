@@ -205,7 +205,7 @@ else
 					<li><a href="events.php">Events</a><i>/</i></li>
 					<li><a href="about.php">About Us</a><i>/</i></li>
 					<li><a href="index.php">Best Deals</a><i>/</i></li>
-					<li><a href="services.php">Services</a></li>
+					
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -337,7 +337,6 @@ else
 					<li><a href="events.php">Events</a></li>
 					<li><a href="about.php">About Us</a></li>
 					<li><a href="index.php">Best Deals</a></li>
-					<li><a href="services.php">Services</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
@@ -428,9 +427,14 @@ $(document).ready(function(){
 				i;
 
 			// Count the number of each item in the cart
-			for (i = 0; i < len; i++) {
-				total += items[i].get('quantity');
-			}
+			var myStringArray = [];
+// Count the number of each item in the cart
+		for (i = 0; i < len; i++) {  myStringArray.push(items[i].get('item_name'));
+myStringArray.push(items[i].get('quantity'));
+myStringArray.push(items[i].get('amount'));
+				total += items[i].get('quantity')*items[i].get('amount');
+		}
+localStorage.setItem("vOneLocalStorage", myStringArray);
 
 			if (total < 3) {
 				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');

@@ -204,7 +204,7 @@ else
 					<li><a href="events.php">Events</a><i>/</i></li>
 					<li><a href="about.php">About Us</a><i>/</i></li>
 					<li><a href="#">Best Deals</a><i>/</i></li>
-					<li><a href="services.php">Services</a></li>
+					
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -574,7 +574,6 @@ else
 					<li><a href="events.php">Events</a></li>
 					<li><a href="about.php">About Us</a></li>
 					<li><a href="#">Best Deals</a></li>
-					<li><a href="services.php">Services</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">

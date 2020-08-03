@@ -203,7 +203,7 @@ else
 					<li><a href="events.php">Events</a><i>/</i></li>
 					<li><a href="about.php">About Us</a><i>/</i></li>
 					<li><a href="index.php">Best Deals</a><i>/</i></li>
-					<li><a href="services.php">Services</a></li>
+					
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -330,7 +330,7 @@ else
 					<li><a href="events.php">Events</a></li>
 					<li><a href="about.php">About Us</a></li>
 					<li><a href="index.php">Best Deals</a></li>
-					<li><a href="services.php">Services</a></li>
+					
 
 				</ul>
 			</div>

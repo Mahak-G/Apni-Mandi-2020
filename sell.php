@@ -93,7 +93,7 @@ else
 <!DOCTYPE html>
 <html>
 <head>
-<title>Emandi/login</title>
+<title>Emandi/sell</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -293,7 +293,7 @@ else
 					<li><a href="events.php">Events</a><i>/</i></li>
 					<li><a href="about.php">About Us</a><i>/</i></li>
 					<li><a href="index.php">Best Deals</a><i>/</i></li>
-					<li><a href="services.php">Services</a></li>
+					
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -381,37 +381,7 @@ else
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
-<!-- newsletter-top-serv-btm -->
-	<div class="newsletter-top-serv-btm">
-		<div class="container">
-			<div class="col-md-4 wthree_news_top_serv_btm_grid">
-				<div class="wthree_news_top_serv_btm_grid_icon">
-					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-				</div>
-				<h3>Nam libero tempore</h3>
-				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-					saepe eveniet ut et voluptates repudiandae sint et.</p>
-			</div>
-			<div class="col-md-4 wthree_news_top_serv_btm_grid">
-				<div class="wthree_news_top_serv_btm_grid_icon">
-					<i class="fa fa-bar-chart" aria-hidden="true"></i>
-				</div>
-				<h3>officiis debitis aut rerum</h3>
-				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-					saepe eveniet ut et voluptates repudiandae sint et.</p>
-			</div>
-			<div class="col-md-4 wthree_news_top_serv_btm_grid">
-				<div class="wthree_news_top_serv_btm_grid_icon">
-					<i class="fa fa-truck" aria-hidden="true"></i>
-				</div>
-				<h3>eveniet ut et voluptates</h3>
-				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-					saepe eveniet ut et voluptates repudiandae sint et.</p>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-<!-- //newsletter-top-serv-btm -->
+
 <!-- newsletter -->
 	<div class="newsletter">
 		<div class="container">
@@ -437,7 +407,7 @@ else
 					<li><a href="events.php">Events</a></li>
 					<li><a href="about.php">About Us</a></li>
 					<li><a href="index.php">Best Deals</a></li>
-					<li><a href="services.php">Services</a></li>
+					
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">

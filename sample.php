@@ -1,4 +1,5 @@
 <?php
+    
      include('register.php');
      $sql1="SELECT * FROM product";
      $res1=mysqli_query($link,$sql1);
