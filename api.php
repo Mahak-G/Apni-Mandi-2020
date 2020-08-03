@@ -13,7 +13,7 @@ $a="";
     $crd=htmlspecialchars($_SESSION["cardno"]);
 		require('textlocal.class.php');
 
-		$textlocal = new Textlocal(false, false,'U64JUPYAiJE-hAiv70Ut6MJtP3EmiuY6NqzcSy6Pd5');
+		$textlocal = new Textlocal(false, false,'lfotIw1FFnQ-B0jVy4xsgZpcWbWmYiJ47Ah9S1C2py');
 
 		// You can access MOBILE from credential.php
 		// $numbers = array(MOBILE);
@@ -25,8 +25,8 @@ $a="";
         " Card Number:".$crd ;
 		try {
 			$result = $textlocal->sendSms($numbers, $message, $sender);
-            $a="Invoice successfully send..";
-            echo $a;
+			$a="Invoice successfully send..";
+			echo $a;
 		} catch (Exception $e) {
 			die('Error: ' . $e->getMessage());
 		}

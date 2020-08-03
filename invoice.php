@@ -293,7 +293,21 @@ else
 		</div>
 		
 	</div>
+	<form action="new.php" align="center" >
 	
+                <fieldset>
+                    <input type="submit" value="Generate" style="background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;"  class="button" >
+                </fieldset>
+			</form>
 	<form action="#" align="center" >
 	
                 <fieldset>

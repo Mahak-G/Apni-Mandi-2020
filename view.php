@@ -17,13 +17,13 @@ $sql="SELECT * FROM FARMER_PRODUCT WHERE FARMERID = '$u'";
                    ?>
 				   
                    <?php
-				  $a=$row['unitprice'];
+				 
 				   $b=$row['QUALITY'];
 				   $c=$row['UNITPRICE'];
 				   $d=$row['PRODNAME'];
 				  
 				   $f=$row['HARVESTED'];
-				   header('location:mg.php');
+				   //header('location:mg.php');
 				  
               }
           }
@@ -252,7 +252,7 @@ else
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.php">Home</a><span>|</span></li>
-				<li>Sign In & Sign Up</li>
+				
 			</ul>
 		</div>
 	</div>
@@ -292,17 +292,17 @@ else
 		<div class="w3l_banner_nav_right">
 <!-- login -->
 		<div class="w3_login">
-			<h3>Sign In</h3>
+			
 			<div class="w3_login_module">
 				<div class="module form-module">
 				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
 				  </div>
 				  <div class="form">
-					<h2>Login to your account</h2>
+					
 					<form method="post">
 					  <?php 
 if(isset($_POST['login']))
-			echo "$a   $b  $c  $d   $e   $f";?>
+			echo "$a<br> $b<br> $c<br>   $d <br>  $e<br>   $f";?>
 					  <input type="submit" value="View all Products" name="login">
 					</form>
 				  </div>
