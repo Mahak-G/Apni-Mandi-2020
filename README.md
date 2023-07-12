@@ -9,24 +9,8 @@ from this process so that both buyers and sellers can benefit from the same. In 
 about going to market to buy veggies and consider online buying a favourable option. </em>
 </p>
 
-## Demo Images:
-<b><em>These images show how the website is displayed and how it works .</em></b><br><br>
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/initial.jpg" height="250" width="400" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/signup.jpg" height="250" width="400" />
-<br><br><b><em>While registering on the website, OTP verification is done by sending otp messages through textlocal.in .</em></b><br><br>
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/otp.jpg" height="250" width="400" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/signin.jpg" height="250" width="400" />
-<br><br><b><em>Under the account tab, account details and recent order details are displayed.</em></b><br><br>
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/accountdet.jpg" height="250" width="400" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/cart.jpeg" height="250" width="400" />
-<br><br><b><em>Both pickup and doorstep delivery options are provided. If you select pickup, the farmer with the same pincode as yours or the 
-nearest farmer with the available products is displayed.</em></b><br><br>
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/payment.jpeg" height="250" width="400" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/famer%20gps.jpeg" height="250" width="400" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/pay%20card.jpeg" height="250" width="400" />
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/invoice.jpeg" height="250" width="400" />
-<br><br><b><em>Google Action Invocation is displayed in the image below.</em></b><br><br>
-<img src="https://github.com/AyushiAgrawal9501/RA27_Shakti_WIMDR/blob/master/images/gac.png" height="250" width="400" />
+## Live Project:
+You can check the demo version of this project in the drive link: https://drive.google.com/drive/u/1/folders/1t4xprgmJowUUYiXyu1HqU_EiefrrX0C3
 
 
 ## Overview:
@@ -46,10 +30,10 @@ nearest farmer with the available products is displayed.</em></b><br><br>
 
 ## Technology stack:
 ### Languages:
-     Python, R, MySQL, CSS, HTML, JavaScript, PHP , Node js
+     MySQL, CSS, HTML, JavaScript, PHP
 ### Software: 
-     Tenser flow , Anaconda, Visual studio code , Image editors , GitHub, Google   
-     chatbot ,  MySQL workbench, Xampp, Rstudio, R-3.3.1, WhatsApp(or corresponding 
+     Visual studio code , Image editors , GitHub, Google   
+     chatbot ,  MySQL workbench, Xampp,  WhatsApp(or corresponding 
      social media), PHPMyAdmin, TextLocal.in  , "go translate" plugin. 
      
 ## Installation:
